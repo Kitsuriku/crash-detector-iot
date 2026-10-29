@@ -4,7 +4,7 @@ import paho.mqtt.client as mqtt
 from dotenv import load_dotenv
 
 load_dotenv()
-PROJECT_ID = os.getenv("PROJECT_ID", "crash_kelompok_01")
+PROJECT_ID = os.getenv("PROJECT_ID", "crash_kelompok_11")
 BROKER_HOST = os.getenv("BROKER_HOST", "broker.hivemq.com")
 BROKER_PORT = int(os.getenv("BROKER_PORT", "1883"))
 BROKER_USER = os.getenv("BROKER_USER") or None
