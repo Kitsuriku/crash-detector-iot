@@ -29,7 +29,7 @@ def send_location(payload):  # QoS 0: lokasi live cukup "kirim lalu lupakan", fi
 
 
 def gps_loop():
-    for d in termux.stream(["termux-location", "-p", "gps", "-r", "updates"]):
+    for d in termux.stream(["termux-location", "-p", "network", "-r", "updates"]):
         if args.debug_sensors:
             print("GPS", d)
         with lock:
